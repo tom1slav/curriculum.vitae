@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Tomislav}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Nikic}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Phone}{12}{+43 660 125 340 1}\\
+	\icon{At}{12}{\href{mailto:hello@nikic.dev}{hello@nikic.dev}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Github}{12}{\href{https://github.com/tom1slav}{github.com/tom1slav}}\\
+	\icon{Twitter}{12}{\href{https://twitter.com/@tomislav\_nikic}{@tomislav\_nikic}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I am a software engineer with a lot of experience in framework development for test automation. After working in an all open source team, I have found my love for it. Sharing and improving work together makes coding fun. I love to learn new things all the time. Recently, I started to get interested in Machine Learning and its uses. In general, I always try to stay positive in life and push my own knowledge.\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Ruby}{80}
+		\baritem{JavaScript}{60}
+		\baritem{Git}{100}
+		\baritem{Selenium}{90}
+		\baritem{Linux}{80}
+		\baritem{Machine Learning}{40}
+	\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2019 -- 2022}
+		{Software Engineer in Test}
+		{GitLab Inc.}
+		{I was working as a software engineer in test for GitLab. My team and I were developing a framework using Selenium and Capybara for easier test implementation and execution.\\ \texttt{Ruby}\slashsep\texttt{Selenium}\slashsep\texttt{Pact.io}}
+	\entry
+		{2018 -- 2019}
+		{Software Engineer, Test Automation}
+		{Shpock GmbH}
+		{I was responsible for implementing a new framework for mobile automated testing. Since the product was mainly used from the app, this was vital for the company.\\ \texttt{Node.js}\slashsep\texttt{Appium}\slashsep\texttt{WebdriverIO}}
+	\entry
+		{2017 -- 2018}
+		{Test Automation Engineer}
+		{Anecon GmbH}
+		{This was my introduction to test automation as a concept. I worked on multiple sites. Due to this, I witnessed a plethora of different projects and automation designs.\\ \texttt{C\#}\slashsep\texttt{Selenium}\slashsep\texttt{SAP}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2016 -- 2018}
+		{Master's Degree}
+		{University of Applied Sciences, Technikum Wien}
+		{I have a masters degree in software development. During my studies I worked on many small and medium sized projects. My master thesis was about quality automation.}
+	\entry
+		{2017}
+		{ISTQB Foundation Level}
+		{Austrian Testing Board}
+		{During my first employment in the field of test automation, I got the opportunity to pass my ISTQB certificate. This is a fundamental software testing certificate.}
+	\entry
+		{2011 -- 2016}
+		{Bachelor's Degree}
+		{University of Vienna}
+		{My bachelor studies were in the field of health informatics like imaging technologies. My thesis was in the field of medical data collection systems.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{German} - native\\
+	\textbf{Croatian} - native\\
+	\textbf{English} - proficient
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love working with wood and improving my own home with it. Also taking pictures of all the things.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	My family and I try to help kids in need. Due to war, a lot of children are alone in a new country.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
